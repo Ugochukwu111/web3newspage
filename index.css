@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    font-family: 'Inter','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    Font-size: 15px;
+    min-height: 100svh;
+    padding: 2em 0;
+}
+
+:root{
+   --Soft-orange: hsl(35, 77%, 62%);
+   --Soft-red: hsl(5, 85%, 63%);
+   --Off-white: hsl(36, 100%, 99%);
+   --Grayish-blue: hsl(233, 8%, 79%);
+   --Dark-grayish-blue: hsl(236, 13%, 42%);
+   --Very-dark-blue: hsl(240, 100%, 5%);
+   }
+
+/* =======typography===== */
+h1{
+  font-weight:800;
+  text-transform: capitalize;
+  font-size: 3.5rem;
+}
+
+h2{
+   text-transform: capitalize;
+   font-weight: 800;
+   color: var(--Soft-orange);
+   font-size: 2rem;
+  
+}
+
+h3{
+   color: var(--Off-white);
+   font-weight: 700;
+   padding-bottom: .5em;
+}
+
+h4{
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--Grayish-blue);
+   margin-bottom: .35em;
+}
+
+p{
+   color: var(--Grayish-blue);
+   font-size: .988rem;
+}
+
+
+
+    /* ===== THE NORMAL FONT WEIGHTS ARE =====
+     ======= Weights: 400, 700, 800 ======== */
+
+nav{
+   max-width: 1000px;
+   margin: 0em auto;
+   margin-bottom: 2em;
+}
+
+nav ul{
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+   align-items:center;
+}
+
+nav li {
+   height: 50px;
+}
+
+nav a{
+   height: 100%;
+   padding: 0 1em;
+   display: flex;
+   align-items: center;
+   color: var(--Dark-grayish-blue);
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: all 250ms;
+}
+
+nav a:active{
+   color: var(--Soft-red);
+   background-color: none;
+}
+
+nav li:first-child{
+   margin-right: auto;
+}
+
+hr{
+   border: .1px solid var(--Grayish-blue);
+   border-radius: 1rem;
+}
+
+
+/* ===== my mobile side bar -===== */
+.side-bar{
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100svh;
+   z-index: 999;
+   display: none;
+   flex-direction: column;
+   justify-content: start;
+   align-items: start;
+   width: 350px;
+   background-color: var(--Off-white);
+
+}
+
+.side-bar li  {
+   width: 100%;
+}
+
+.side-bar a  {
+   width: 100%;
+}
+
+.close{
+   display: flex;
+   width: 100%;
+   justify-content: end;
+   padding-top: 1em;
+   padding-right: 1em;
+   box-sizing: border-box;
+   margin-bottom: 4em;
+}
+
+.mobile-ham{
+   display: none;
+}
+
+/* ===== media query for  mobiles ====*/
+@media(max-width: 800px){
+   .mobile-nav{
+      display: none;
+   }
+   .mobile-ham{
+      display: flex;
+   }
+}
+
+@media (max-width: 400px){
+   .side-bar{
+      width: 100%;
+   }
+}
+
+
+
+
+/* ====== BODY SEDCTION === */
+.holder{
+   max-width: 1000px;
+   margin: 0 auto;
+   box-sizing: border-box;
+  
+}
+
+.container-for-two-main-divs{
+   display: flex;
+   padding-bottom: 1em;
+}
+
+.left-side-div{
+   width: 131%;
+   margin-right: 1.5em;
+}
+
+.web3{
+   width: 100%;
+}
+.picuture-div{
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.two-text-box-div{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   box-sizing: border-box;
+   padding-top: 1.5em;
+}
+
+.bright-future{
+   width: 100%;
+ 
+}
+
+.read-more{
+   padding-left: 1em;
+   color: var(--Dark-grayish-blue);
+   width: 100%;
+   line-height: 1.5rem;
+   position: relative;
+}
+
+.read-btn{
+   display: block;
+   margin-top: 7.4em;
+   background-color: var(--Soft-red);
+   border: none;
+   text-transform: uppercase;
+   padding: 1em 2em;
+   font-size: .8rem;
+   font-weight: 700;
+   color: var(--Off-white);
+    letter-spacing: .23rem;
+    transition: all 250ms;
+}
+
+.read-btn:hover{
+   cursor: pointer;
+}
+
+.read-btn:active{
+  background-color: var(--Very-dark-blue);
+}
+
+.black-div{
+   padding: 1.3em 1em;
+   background-color: var(--Very-dark-blue);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.inside-black-div-texts{
+   padding-bottom: 1.3em;
+   line-height: 1.5rem;
+}
+
+
+/* ===== last section of my projects ===== */
+.columns-last-three-divs{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+   margin-top: 3em;
+  
+}
+
+
+.mini-image-box{
+   aspect-ratio: 1.2 / 1.4;
+   width: 90px;
+   margin-right: 1.5em;
+}
+
+.c-1{
+   display: flex;
+   line-height: 1.5rem;
+
+}
+
+.black-little-text{
+   color: var(--Very-dark-blue);
+   font-weight: 800;
+    transition: all 200ms;
+}
+
+.black-little-text:active{
+    color: var(--Soft-red);
+   
+}
+
+.black-little-text:hover{
+   cursor: pointer;
+}
+
+/* ==== media query for my web ==== */
+
+
+@media(max-width: 800px){
+   .container-for-two-main-divs{
+      flex-direction: column;
+   }
+
+   .two-text-box-div{
+      flex-direction: column;
+   }
+
+   .left-side-div{
+      width: 100%;
+   }
+   .read-btn{
+     position: none;
+     margin: 3em 0;
+   }
+   .read-more{
+     padding: 0;
+     margin: 1.3em 0;
+   }
+
+   .columns-last-three-divs{
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+   }
+
+  .c-1{
+   margin-bottom: 2em;
+   font-size: .8rem;
+  }
+
+  body, html{
+   padding:1em .3em ;
+  }
+}
