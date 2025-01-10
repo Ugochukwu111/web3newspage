@@ -110,12 +110,13 @@ hr{
    right: 0;
    height: 100svh;
    z-index: 999;
-   display: none;
+   transform: translateX(100%);
    flex-direction: column;
    justify-content: start;
    align-items: start;
    width: 350px;
    background-color: var(--Off-white);
+   transition: all 300ms;
 
 }
 
